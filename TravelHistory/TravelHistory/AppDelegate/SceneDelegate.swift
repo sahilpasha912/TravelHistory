@@ -77,7 +77,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             LocationTracker.shared.startLocationTracker()
             LocationTracker.shared.isBackGround = true
             self.bgtimer = Timer()
-            self.bgtimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(SceneDelegate.bgtimer(_:)), userInfo: nil, repeats: true)
+            self.bgtimer = Timer.scheduledTimer(timeInterval: 10*60, target: self, selector: #selector(SceneDelegate.bgtimer(_:)), userInfo: nil, repeats: true)
         }
     }
     
